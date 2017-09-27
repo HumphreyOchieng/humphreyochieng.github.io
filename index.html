@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Humphrey Ochieng</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:b|Roboto:b|Roboto+Slab:b|Open+Sans:b"
+          rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">HO</div>
+    <div class="nav__menu-icon" id="nav__menu-icon">
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+    </div>
+    <nav class="nav">
+        <ul class="nav__inner" id="nav__inner">
+            <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home__inner">
+        <div class="home__title"><p>Humphrey Ochieng</p></div>
+        <hr class="home__divider" />
+        <div class="home__body">
+            <div class="home__body__inner">
+                <p class="home__paragraph">
+                    A 21 year old freelance front-end web designer and developer. I also develop
+                    my own projects on the side. I enjoy making websites that are
+                    clean, minimal and responsive across a wide range of devices.
+                </p>
+                <p class="home__paragraph">
+                    You can view my work <a class="home__link" href="#portfolio">here</a> or feel
+                    free get in touch with me through <a class="home__link" href="#contact">here</a>
+                    if you have an idea you'd like to work with me on or to talk about anything
+                    related to web development.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <div class="portfolio__inner">
+        <div class="portfolio__title">Portfolio</div>
+        <div class="portfolio__item"><a href="#"></a></div>
+        <div class="portfolio__item"><a href="#"></a></div>
+        <div class="portfolio__item"><a href="#"></a></div>
+        <div class="portfolio__item"><a href="#"></a></div>
+        <div class="portfolio__item"><a href="#"></a></div>
+        <div class="portfolio__item"><a href="#"></a></div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact__inner">
+        <div class="contact__title">Contact</div>
+        <div class="contact__label">Email:</div>
+        <div class="contact__link-container">
+            <a class="contact__link" href="mailto:humochieng9@gmail.com">humochieng9@gmail.com</a>
+        </div>
+        <div class="contact__label">Skype:</div>
+        <div class="contact__link-container">
+            <a class="contact__link" href="skype:humphrey.ochieng3?chat">humphrey.ochieng3</a>
+        </div>
+        <form class="form-container">
+            <fieldset class="form">
+                <legend class="form__legend">Form</legend>
+                <p class="form__label-container"><label class="form__label" for="form__name">Your Name</label></p>
+                <div class="form__input-container">
+                    <input type="text" id="form__name" class="form__input" required />
+                </div>
+                <p class="form__label-container"><label class="form__label" for="form__email">Your Email</label></p>
+                <div class="form__input-container">
+                    <input type="email" id="form__email" class="form__input" required />
+                </div>
+                <p class="form__label-container" ><label class="form__label" for="form__body">Message</label></p>
+                <div class="form__input-container">
+                    <textarea id="form__body" class="form__input"></textarea>
+                </div>
+                <div class="form__input-container"><button id="form__submit">Send</button></div>
+            </fieldset>
+        </form>
+    </div>
+</section>
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

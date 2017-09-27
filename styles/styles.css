@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Layout and Positioning*/
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 3% 4% 1%;
+    top: 0;
+}
+.logo{
+    display: inline-block;
+}
+.nav__inner{
+    list-style-type: none;
+    margin: 0 auto;
+}
+.nav__inner--open{
+    list-style-type: none;
+    margin: 0 auto;
+}
+.nav__menu-icon{
+    padding: 0.3em 0.1em;
+}
+.home__title{
+    padding: 2em 0.7em 0.6em;
+}
+.home__divider{
+    margin-left: 1.5em;
+    margin-bottom: 1.2em;
+}
+.home__body__inner{
+    width: 80%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-left: 2em;;
+}
+.home__paragraph{
+    padding-bottom: 2em;
+
+}
+.portfolio{
+    padding: 1em 0.5em 2em;
+}
+.contact__inner{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.contact__title{
+    padding: 1em 0;
+}
+.form{
+    width: 95%;
+    margin: 2em auto;
+}
+.form__legend{
+    padding: 0.7em 1em 0.7em;
+}
+.form__input-container{
+    margin: 0.2em 0 0.9em;
+}
+
+
+/*Appearance*/
+.header{
+    background-color: #178ff9;
+}
+.logo{
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.nav{
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+.nav__inner{
+    height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+}
+.nav__inner--open{
+    height: 40em;
+}
+.nav__checkbox{
+    display: none;
+}
+.nav__menu-icon{
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    width: 2em;
+    height: 2em;
+    user-select: none;
+}
+.nav__bar{
+    display: block;
+    width: 100%;
+    height: 0.3em;
+    background: #fff;
+    margin-bottom: 0.2em;
+    transition: all .3s linear;
+}
+.nav__bar--crossed{
+    display: block;
+    width: 100%;
+    height: 0.3em;
+    background: #fff;
+    margin-bottom: 0.2em;
+    transition: all .3s linear;
+}
+.nav__bar--crossed:nth-child(1){
+    transform: rotate(-45deg) translate(-0.35em, 0.35em);
+}
+.nav__bar--crossed:nth-child(2){
+    opacity: 0;
+}
+.nav__bar--crossed:nth-child(3){
+    transform: rotate(45deg) translate(-0.35em, -0.35em);
+}
+.nav__item{
+    line-height: 4em;
+    font-size: 1.5em;
+}
+.nav__item:nth-child(1){
+    margin-top: 3em;
+}
+.nav__link{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+}
+.home{
+    background-color: #178ff9;
+}
+.home__title{
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: Montserrat;
+}
+.home__divider{
+    border: 3px solid;
+    width: 10%;
+}
+.home__body{
+    font-family: "Roboto Slab";
+}
+.home__link{
+    color: #fff;
+}
+.portfolio{
+    text-align: center;
+    background-color: #333;
+    height: 30em;
+}
+.portfolio__title{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+}
+.contact{
+    text-align: center;
+    background-color: #d4410a;
+}
+.contact__title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: Montserrat;
+}
+.contact__label{
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #111;
+}
+.contact__link-container{
+    margin: 0.3em 0 1em;
+    font-family: Roboto;
+    font-size: 1.2em;
+}
+.contact__link{
+    color: #fff;
+}
+.form{
+    border: 2px solid #111;
+}
+.form__legend{
+    font-family:"Open Sans";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #111;
+}
+.form__label-container{
+    color: #111;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+.form__input{
+    width: 90%;
+    border: none;
+    border-radius: 1px;
+    line-height: 2em;
+    color: #333;
+    padding-left: 0.5em;
+    font-size: 1.1em;
+}
+#form__body{
+    min-height: 10em;
+}
+#form__submit{
+    width: 90%;
+    line-height: 1.5em;
+    border: none;
+    border-radius: 1px;
+    font-weight: bold;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #fff;
+    background: #222;
+}
+#form__submit:hover{
+    background: #178ff9;
+}
