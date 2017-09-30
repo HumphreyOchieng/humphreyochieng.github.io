@@ -7,18 +7,21 @@ document.addEventListener('DOMContentLoaded', function(){
         list = document.getElementById('nav__inner'),
         menuIcon = document.getElementById('nav__menu-icon'),
         menuIconBars = document.getElementsByClassName('nav__bar'),
-        menuIconBarsClicked = document.getElementsByClassName('nav__bar--crossed')
+        menuIconBarsClicked = document.getElementsByClassName('nav__bar--crossed'),
+        body = document.getElementsByTagName('body')
         ;
 
     function openMenu(){
         list.className = "nav__inner--open";
-        console.log("List Items: " + menuIconBars.length);
+        body[0].className = "no-scroll";
         for(var counter = menuIconBars.length-1;counter >= 0; --counter){
             menuIconBars[counter].className = 'nav__bar--crossed';
         }
     }
     function closeMenu(){
+
         list.className = "nav__inner";
+        body[0].className = "";
         for(var counter = menuIconBarsClicked.length-1;counter >= 0; --counter){
             menuIconBarsClicked[counter].className = 'nav__bar';
         }

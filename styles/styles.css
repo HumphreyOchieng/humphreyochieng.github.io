@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 /*Layout and Positioning*/
+.no-scroll{
+    overflow: hidden;
+}
 .header{
     position: fixed;
     width: 100%;
@@ -25,17 +28,15 @@
     padding: 0.3em 0.1em;
 }
 .home__title{
-    padding: 2em 0.7em 0.6em;
+    padding: 2.5em 0.4em 0.4em;
 }
 .home__divider{
-    margin-left: 1.5em;
+    margin-left: 1.6em;
     margin-bottom: 1.2em;
 }
 .home__body__inner{
-    width: 80%;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    margin-left: 2em;;
+    width: 85%;
+    margin-left: 1.2em;;
 }
 .home__paragraph{
     padding-bottom: 2em;
@@ -124,7 +125,7 @@
     transform: rotate(45deg) translate(-0.35em, -0.35em);
 }
 .nav__item{
-    line-height: 4em;
+    line-height: 3em;
     font-size: 1.5em;
 }
 .nav__item:nth-child(1){
@@ -134,7 +135,7 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Roboto Slab";
+    font-family: "Montserrat";
     font-weight: bold;
 }
 .home{
@@ -150,7 +151,7 @@
     width: 10%;
 }
 .home__body{
-    font-family: "Roboto Slab";
+    font-family: "Open Sans";
 }
 .home__link{
     color: #fff;
@@ -191,13 +192,13 @@
     color: #fff;
 }
 .form{
-    border: 2px solid #111;
+    border: 2px solid #222;
 }
 .form__legend{
     font-family:"Open Sans";
     font-weight: bold;
     text-transform: uppercase;
-    color: #111;
+    color: #222;
 }
 .form__label-container{
     color: #111;
@@ -205,7 +206,7 @@
     font-family: "Open Sans";
 }
 .form__input{
-    width: 90%;
+    width: 95%;
     border: none;
     border-radius: 1px;
     line-height: 2em;
@@ -217,7 +218,7 @@
     min-height: 10em;
 }
 #form__submit{
-    width: 90%;
+    width: 95%;
     line-height: 1.5em;
     border: none;
     border-radius: 1px;
@@ -228,6 +229,7 @@
     cursor: pointer;
     color: #fff;
     background: #222;
+    letter-spacing: 0.15em;
 }
 #form__submit:hover{
     background: #178ff9;
